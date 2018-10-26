@@ -2,8 +2,8 @@
 Exam 3, problem 4.
 
 Authors: David Mutchler, Dave Fisher, Matt Boutell, their colleagues,
-         and PUT_YOUR_NAME_HERE.  October, 2018.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Bryan Wolfe.  October, 2018.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -76,8 +76,24 @@ And this one for n=14:
 
     :type n: int
     """
+    for k in range(n):
+        for j in range(n-k):
+            print(' ', end='')
+        for f in range(k+1):
+            print(f+1, end='')
+        print(' ', end='')
+        for l in range(k+2):
+            print('*', end='')
+        print(' ', end='')
+        for h in range(n-k, 0, -1):
+            print(h, end='')
+        print()
+
+
+
+
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # Done: 2. Implement and test this function.
     #          Some tests are already written for you (above).
     ####################################################################
     # IMPORTANT: In your final solution for this problem,
